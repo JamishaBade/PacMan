@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pacman Game</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    canvas {
+      border: 7px solid rgb(255, 255, 255);
+      margin: 20px 0;
+    }
+
+    #gameOver {
+      display: none;
+      font-size: 48px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #score,
+    #lives {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Pacman</h1>
+  <div id="score">Score: 0</div>
+  <div id="lives">Lives: ❤️❤️❤️</div>
+  <canvas id="gameCanvas" width="600" height="600"></canvas>
+  <div id="gameOver">GAME OVER!</div>
+  <div> use arrow keys to move; use SPACE key to restart a new game</div>
+
+  <!-- Load scripts in the correct order -->
+  <script src="js/config.js"></script>
+  <script src="js/game-state.js"></script>
+  <script src="js/drawing.js"></script>
+  <script src="js/game-logic.js"></script>
+  <script src="js/event-handlers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+/* this isnt used */
+
+
+body {
+        margin: 0;
+        padding: 20px;
+        background: #001;
+        color: #000;
+        font-family: 'Courier New', monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gameContainer {
+        text-align: center;
+    }
+
+    #gameCanvas {
+        border: 2px solid #00f;
+        background: #000;
+    }
+
+    #gameInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        margin: 10px 0;
+    }
+
+    #score {
+        font-size: 24px;
+        color: #ff0;
+    }
+
+    #lives {
+        font-size: 24px;
+        color: #0f0;
+    }
+
+    #gameOver {
+        font-size: 32px;
+        color: #f00;
+        margin: 20px 0;
+        display: none;
+    }
+
+    #instructions {
+        margin: 20px 0;
+        color: #0ff;
+    }
+
+    .controls {
+        margin: 10px 0;
+        color: #fff;
+    }
